@@ -4,26 +4,72 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background: #222;
-    background-image: url(https://images.unsplash.com/photo-1662901603057-057ff15eb6eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=700&q=60);
+    background: #323232;
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 120%;
 }
 
 .card{
-    background: #000000d0;
+    background: linear-gradient(180deg, #FF7777 0%, #FFA69A 52.08%, #FFC9AD 100%);
     color: white;
     padding: 2em;
-    border-radius: 30px;
+    border-radius: 20px;
     width: 100%;
-    max-width: 420px;
+    max-width: 500px;
+    height: 400px;
+    max-height: 100%;
     margin: 1em;
+    padding: 35px;
 }
 
 h1.temp{
+    font-weight: 200;
+    display: flex;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 40px;
+    position: relative;
+}
+
+.desc{
+    position: relative;
+    justify-content: baseline;
+    font-weight: 400;
+    margin-top: 4%;
+}
+
+.img-cloud{
+    width: 280px;
+    margin: -3%;
+    justify-content: baseline;
+}
+
+img{
+    max-width: 100%;
+    position: absolute;
+}
+
+.temp{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
     margin: 0;
+}
+
+.card-cont{
+    margin: 5%;
 }
 
 .search{
@@ -39,8 +85,8 @@ button{
     height: 2.5em;
     width: 2.5em;
     outline: none;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -54,7 +100,7 @@ input.search-bar{
     outline: none;
     padding: 0.5em 1em;
     border-radius: 24px;
-    background: #7c7c7c2b;
+    background: rgba(255, 113, 113, 0.5);
     color: white;
     font-family: inherit;
     font-size: 120%;
